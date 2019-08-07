@@ -9,6 +9,8 @@
 #img-div {
   background-color: white;
   width: 100%;
+  overflow: hidden;
+  max-height: 700px;
   
 }
 
@@ -25,34 +27,39 @@
 
 #image {
   max-width: 100%;
-  width: 100%;
-  display: block;
 }
 
-#img-caption {
+#img-div p {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  padding: 8px;
 }
 
 #tribute-info {
+  padding: 10px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#tribute-info h2 {
+  display: inline;
   font-size: 25px;
   text-align: center;
   width: 70%;
-  display: block;
   margin: auto;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 30px;
+  background-color: DarkTurquoise;
 }
 
 .grid-container {
-  display: grid;
+  display: inline-grid;
   grid: 150px / auto auto;
   grid-gap: 60px;
   padding: 25px 50px 120px;
   width: 75%;
   margin: auto;
+  overflow: auto;
+
 }
 
 ul {
@@ -156,9 +163,9 @@ ul li {
 #tribute-info {
   font-weight: 800px;
   font-size: 18px;
-  text-align: justify;
-  display: block;
-  width: 85%;
+  margin: 0 auto;
+  display: inline;
+  width: 55%;
   padding: 5px;
   
 }
@@ -225,7 +232,6 @@ ul li {
   height: 50px;
   width: 100%;
   margin: 0 auto;
-  position: inline;
 }
   
   #tribute-link {
