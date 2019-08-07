@@ -51,7 +51,7 @@
   display: grid;
   grid: 250px / auto auto;
   grid-gap: 60px;
-  padding: 25px;
+  padding: 70px;
   width: 80%;
   margin: 0 auto;
 
@@ -78,14 +78,13 @@ ul li {
 
 #quote-section {
   background-color: LightGrey;
-  float: right;
-  display: block;
+  padding-top: 70px;
 }
 
 #article-quote {
   font-size: 20px;
-  padding: 50px 75px 25px 75px;
-  margin-right: 100px;
+  padding: 25px 75px 25px 75px;
+  margin-right: 50px;
   
 }
 
@@ -101,12 +100,12 @@ ul li {
 }
 
 #elton-img {
- max-width: 50%;
+ max-width: 45%;
  display: block;
  float: left;
  padding: 25px 75px 25px 75px;
  max-height: 700px;
- margin-left: 100px;
+ margin-left: 50px;
 }
 
 #footer {
@@ -125,41 +124,40 @@ ul li {
 
 
 @media only screen and (max-width: 600px) {
+
+body {
+  min-height: 100%;
+}
   
-  
-  #img-div {
-  background-color: white;
-  max-width: 100%;
+#img-div {
   position: relative;
   text-align: center;
 }
 
 #title {
-  font-size: 40px;
+  font-size: 45px;
   font-family: 'Roboto Slab', serif;
   font-style: bold;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
 #image {
   max-width: 100%;
-  display: inline;
 }
 
-#img-caption {
+#img-div p {
   display: none;
 }
 
-#tribute-info {
-  font-weight: 800px;
+#tribute-info h2 {
+  font-weight: 600px;
   font-size: 18px;
   margin: 0 auto;
-  display: inline;
-  width: 55%;
+  width: 75%;
   padding: 5px;
   
 }
@@ -167,8 +165,9 @@ ul li {
 .grid-container {
   display: block;
   max-width: 100%;
-  margin: auto;
-  padding-bottom: 5px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0px;
 }
 
 ul {
@@ -196,11 +195,11 @@ ul li {
   float: none;
   display: block;
   max-width: 100%;
-  padding: 10px;
+  padding: 5px 0px;
 }
 
 #article-quote {
-  font-size: 18px;
+  font-size: 14px;
   width: 100%;
   padding: 5px;
   margin: auto;
@@ -208,19 +207,32 @@ ul li {
   text-align: justify;
 }
 
+#article-cont {
+  display: none;
+}
+
 #elton-img {
- align: center;
  display: block;
  float: none;
  padding: 5px;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 #article-link {
   color: black;
   font-weight: 700;
+  padding: 15px;
+  margin: 0 auto;
 }
+
+#quote-section p {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
   #footer {
   background-color: gray;
   height: 50px;
